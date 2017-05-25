@@ -1,1 +1,86 @@
-<h1>Hi!</h1>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Navy Electricity and Electronics Training Series </title>
+<link rel="stylesheet" type="text/css" href="neetstyle.css"/>
+</head>
+<body>
+<h1>Navy Electricity and Electronics Training Series in HTML</h1>
+<p>
+This site hosts a conversion of the Navy Electricity and Electronics Training Series (NEETS) from PDF to HTML format.
+</p>
+
+<p>
+The following process was used to generate these pages:
+</p>
+<ul>
+<li>Use Apache TIKA to extract text and embedded files from the PDF</li>
+<li>Use ImageMagick to convert TIF to PNG</li>
+<li>Create a domain model in f#, use HTMLAgilityPack to traverse "ugly" HTML and create json model</li>
+<li>Use json model to generate "pretty" HTML</li>
+</ul>
+
+<p>The above steps were accomplished in a <a href="beaker-notebook-neets-021717.pdf">Beaker Notebook</a>. The output is mostly correct with some errors.</p>
+
+<h2>HTML Format NEETS</h2>
+<p>These are the output html pages for the extraction above:</p>
+<ul>
+<li><a href="Mod01 - Matter Energy and DC.pdf-extracted/Mod01 - Matter Energy and DC.pdf.xhtml-pretty.html">Mod01 - Matter Energy and DC</a></li>
+<li><a href="Mod02 - AC and Transformers.pdf-extracted/Mod02 - AC and Transformers.pdf.xhtml-pretty.html">Mod02 - AC and Transformers</a></li>
+<li><a href="Mod03 - Circuit Protection Control and Measurement.pdf-extracted/Mod03 - Circuit Protection Control and Measurement.pdf.xhtml-pretty.html.pdf.xhtml-pretty.html">Mod03 - Circuit Protection Control and Measurement</a></li>
+<li><a href="Mod04 - Conductors Wiring and Schematic Reading.pdf-extracted/Mod04 - Conductors Wiring and Schematic Reading.pdf.xhtml-pretty.html.pdf.xhtml-pretty.html">Mod04 - Conductors Wiring and Schematic Reading</a></li>
+<li><a href="Mod05 - Generators and Motors.pdf-extracted/Mod05 - Generators and Motors.pdf.xhtml-pretty.html">Mod05 - Generators and Motors</a></li>
+<li><a href="Mod06 - Electronic Emission Tubes and Power Supplies.pdf-extracted/Mod06 - Electronic Emission Tubes and Power Supplies.pdf.xhtml-pretty.html">Mod06 - Electronic Emission Tubes and Power Supplies</a></li>
+<li><a href="Mod07 - Solid-State Devices and Power Supplies.pdf-extracted/Mod07 - Solid-State Devices and Power Supplies.pdf.xhtml-pretty.html">Mod07 - Solid-State Devices and Power Supplies</a></li>
+<li><a href="Mod08 - Amplifiers.pdf-extracted/Mod08 - Amplifiers.pdf.xhtml-pretty.html">Mod08 - Amplifiers</a></li>
+<li><a href="Mod09 - Wave-Generation and Wave-Shapping Circuits.pdf-extracted/Mod09 - Wave-Generation and Wave-Shapping Circuits.pdf.xhtml-pretty.html">Mod09 - Wave-Generation and Wave-Shapping Circuits</a></li>
+<li><a href="Mod10 - Wave Propagation Transmission Lines and Antennas.pdf-extracted/Mod10 - Wave Propagation Transmission Lines and Antennas.pdf.xhtml-pretty.html">Mod10 - Wave Propagation Transmission Lines and Antennas</a></li>
+<li><a href="Mod11 - Microwave Principles.pdf-extracted/Mod11 - Microwave Principles.pdf.xhtml-pretty.html">Mod11 - Microwave Principles</a></li>
+<li><a href="Mod12 - Modulation Principles.pdf-extracted/Mod12 - Modulation Principles.pdf.xhtml-pretty.html">Mod12 - Modulation Principles</a></li>
+<li><a href="Mod13 - Number Systems and Logic Circuits.pdf-extracted/Mod13 - Number Systems and Logic Circuits.pdf.xhtml-pretty.html">Mod13 - Number Systems and Logic Circuits</a></li>
+<li><a href="Mod14 - Microelectronics.pdf-extracted/Mod14 - Microelectronics.pdf.xhtml-pretty.html">Mod14 - Microelectronics</a></li>
+<li><a href="Mod15 - Principles of Synchros Servos and Gyros.pdf-extracted/Mod15 - Principles of Synchros Servos and Gyros.pdf.xhtml-pretty.html">Mod15 - Principles of Synchros Servos and Gyros</a></li>
+<li><a href="Mod16 - Test Equipment.pdf-extracted/Mod16 - Test Equipment.pdf.xhtml-pretty.html">Mod16 - Test Equipment</a></li>
+<li><a href="Mod17 - Radio Frequency Communications Principles.pdf-extracted/Mod17 - Radio Frequency Communications Principles.pdf.xhtml-pretty.html">Mod17 - Radio Frequency Communications Principles</a></li>
+<li><a href="Mod18 - Radar Principles.pdf-extracted/Mod18 - Radar Principles.pdf.xhtml-pretty.html">Mod18 - Radar Principles</a></li>
+<li><a href="Mod19 - The Technicians Handbook.pdf-extracted/Mod19 - The Technicians Handbook.pdf.xhtml-pretty.html">Mod19 - The Technicians Handbook</a></li>
+<li><a href="Mod20 - Master Glossary.pdf-extracted/Mod20 - Master Glossary.pdf.xhtml-pretty.html">Mod20 - Master Glossary</a></li>
+<li><a href="Mod21 - Test Methods and Practices.pdf-extracted/Mod21 - Test Methods and Practices.pdf.xhtml-pretty.html">Mod21 - Test Methods and Practices</a></li>
+<li><a href="Mod22 - Digital Computers.pdf-extracted/Mod22 - Digital Computers.pdf.xhtml-pretty.html">Mod22 - Digital Computers</a></li>
+<li><a href="Mod23 - Magnetic Recording.pdf-extracted/Mod23 - Magnetic Recording.pdf.xhtml-pretty.html">Mod23 - Magnetic Recording</a></li>
+<li><a href="Mod24 - Fiber Optics.pdf-extracted/Mod24 - Fiber Optics.pdf.xhtml-pretty.html">Mod24 - Fiber Optics</a></li>
+
+</ul>
+
+<h2>PDF Format NEETS</h2>
+<p>These are the source pdfs for the extraction above:</p>
+
+<ul>
+<li><a href="pdfs/Mod01 - Matter Energy and DC.pdf">Mod01 - Matter Energy and DC</a></li>
+<li><a href="pdfs/Mod02 - AC and Transformers.pdf">Mod02 - AC and Transformers</a></li>
+<li><a href="pdfs/Mod03 - Circuit Protection Control and Measurement.pdf.xhtml-pretty.html.pdf">Mod03 - Circuit Protection Control and Measurement</a></li>
+<li><a href="pdfs/Mod04 - Conductors Wiring and Schematic Reading.pdf.xhtml-pretty.html.pdf">Mod04 - Conductors Wiring and Schematic Reading</a></li>
+<li><a href="pdfs/Mod05 - Generators and Motors.pdf">Mod05 - Generators and Motors</a></li>
+<li><a href="pdfs/Mod06 - Electronic Emission Tubes and Power Supplies.pdf">Mod06 - Electronic Emission Tubes and Power Supplies</a></li>
+<li><a href="pdfs/Mod07 - Solid-State Devices and Power Supplies.pdf">Mod07 - Solid-State Devices and Power Supplies</a></li>
+<li><a href="pdfs/Mod08 - Amplifiers.pdf">Mod08 - Amplifiers</a></li>
+<li><a href="pdfs/Mod09 - Wave-Generation and Wave-Shapping Circuits.pdf">Mod09 - Wave-Generation and Wave-Shapping Circuits</a></li>
+<li><a href="pdfs/Mod10 - Wave Propagation Transmission Lines and Antennas.pdf">Mod10 - Wave Propagation Transmission Lines and Antennas</a></li>
+<li><a href="pdfs/Mod11 - Microwave Principles.pdf">Mod11 - Microwave Principles</a></li>
+<li><a href="pdfs/Mod12 - Modulation Principles.pdf">Mod12 - Modulation Principles</a></li>
+<li><a href="pdfs/Mod13 - Number Systems and Logic Circuits.pdf">Mod13 - Number Systems and Logic Circuits</a></li>
+<li><a href="pdfs/Mod14 - Microelectronics.pdf">Mod14 - Microelectronics</a></li>
+<li><a href="pdfs/Mod15 - Principles of Synchros Servos and Gyros.pdf">Mod15 - Principles of Synchros Servos and Gyros</a></li>
+<li><a href="pdfs/Mod16 - Test Equipment.pdf">Mod16 - Test Equipment</a></li>
+<li><a href="pdfs/Mod17 - Radio Frequency Communications Principles.pdf">Mod17 - Radio Frequency Communications Principles</a></li>
+<li><a href="pdfs/Mod18 - Radar Principles.pdf">Mod18 - Radar Principles</a></li>
+<li><a href="pdfs/Mod19 - The Technicians Handbook.pdf">Mod19 - The Technicians Handbook</a></li>
+<li><a href="pdfs/Mod20 - Master Glossary.pdf">Mod20 - Master Glossary</a></li>
+<li><a href="pdfs/Mod21 - Test Methods and Practices.pdf">Mod21 - Test Methods and Practices</a></li>
+<li><a href="pdfs/Mod22 - Digital Computers.pdf">Mod22 - Digital Computers</a></li>
+<li><a href="pdfs/Mod23 - Magnetic Recording.pdf">Mod23 - Magnetic Recording</a></li>
+<li><a href="pdfs/Mod24 - Fiber Optics.pdf">Mod24 - Fiber Optics</a></li>
+</ul>
+</body>
+</html>
